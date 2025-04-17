@@ -220,6 +220,10 @@ install_project_tools() {
 
     # === ADD YOUR PROJECT-SPECIFIC INSTALLATIONS BELOW ===
 
+    echo "This project needs .Net as we write csharp code."
+    .devcontainer/additions/install-dev-csharp.sh --channel LTS
+
+
     # Example: Installing Azure Functions Core Tools
     # npm install -g azure-functions-core-tools@4
 

@@ -1,32 +1,53 @@
-# Prerequisites
-*.d
+# filename: .gitignore
+# Standard .NET ignores
+**/[Bb]in/
+**/[Oo]bj/
+*.suo
+*.user
+*.userosscache
+*.sln.iml
+*.nupkg
+.paket/
+packages/
+**/.vs/
+**/._*
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+out/
+msbuild.log
+*.log
+*.tlog
 
-# Precompiled Headers
-*.gch
-*.pch
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.sublime-workspace
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Docker ignore (already in .dockerignore but duplicated here)
+Dockerfile
+.dockerignore
 
-# Fortran module files
-*.mod
-*.smod
+# Local development files
+update-devcontainer.sh
+urbalurba-scripts/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Solution file (if not needed)
+workspace.sln
 
-# Executables
-*.exe
-*.out
-*.app
+# Exceptions (keep these)
+!.devcontainer/
+!.github/
+!manifests/
+!src/WebApplication/Program.cs
+!src/WebApplication/WebApplication.csproj
+!Dockerfile
+!LICENSE
+!README*.md
