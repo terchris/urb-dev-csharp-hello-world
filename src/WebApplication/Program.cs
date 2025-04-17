@@ -30,7 +30,7 @@ app.MapGet("/", () =>
     var currentDate = DateTime.Now.ToString("dd/MM/yyyy");
     
     // Return message with template name and formatted datetime
-    return $"Hello world! Template: csharp-basic-webserver. Time: {currentTime} Date: {currentDate}";
+    return $"Hello world! UPDATED Template: csharp-basic-webserver. Time: {currentTime} Date: {currentDate}";
 });
 
 // Start the web server with Kestrel (ASP.NET Core's web server)
