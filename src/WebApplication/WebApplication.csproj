@@ -21,7 +21,7 @@ Project file for ASP.NET Core web application
     <!-- Configure Docker integration for Linux containers 
          (matches devcontainer environment) -->
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-
+    <OutputType>Exe</OutputType>  <!-- Explicit executable output -->
     <!-- Assembly name would default to project directory name -->
   </PropertyGroup>
 
